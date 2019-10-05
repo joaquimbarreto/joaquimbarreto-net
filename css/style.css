@@ -9,18 +9,26 @@ Dark brown: #90462c
 
 */
 
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  /* font-size: 16px; */
   line-height: 1.7;
   color: #777;
+  padding: 2rem;
+  box-sizing: border-box;
 }
 
 .header {
@@ -36,12 +44,12 @@ body {
 
 .logo-box {
   position: absolute;
-  top: 40px;
-  left: 40px;
+  top: 4rem;
+  left: 4rem;
 }
 
 .logo {
-  height: 35px;
+  height: 3.5rem;
 }
 
 .text-box {
@@ -57,16 +65,16 @@ body {
 
 .heading-primary-main {
   display: block;
-  font-size: 50px;
+  font-size: 4rem;
   font-weight: 400;
-  letter-spacing: 25px;
+  letter-spacing: 2rem;
   text-align: center;
 }
 
 .heading-primary-sub {
   display: block;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 400;
-  letter-spacing: 15px;
+  letter-spacing: 1rem;
   text-align: center;
 }
