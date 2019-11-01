@@ -1,19 +1,11 @@
-/*
-Orange/Grey Colour Palette:
-
-Dark grey: #44443b
-Light grey: #e6e4e0
-Orange: #ec7a1c
-Light brown: #9b806e
-Dark brown: #90462c
-
-*/
-
 $dark-grey: #44443b;
 $ight-grey: #e6e4e0;
 $orange: #ec7a1c;
 $light-brown: #9b806e;
 $dark-brown: #90462c;
+
+$default-grey: #777;
+$default-white: #fff;
 
 *,
 *::after,
@@ -32,7 +24,7 @@ body {
   font-weight: 400;
   /* font-size: 16px; */
   line-height: 1.7;
-  color: #777;
+  color: $default-grey;
   padding: 2rem;
   box-sizing: border-box;
 }
@@ -44,7 +36,6 @@ body {
   background-size: cover;
   background-position: top;
   position: relative;
-
   clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
 }
 
@@ -65,7 +56,7 @@ body {
   transform: translate(-50%, -50%);
 }
 .heading-primary {
-  color: #fff;
+  color: $default-white;
   text-transform: uppercase;
 }
 
