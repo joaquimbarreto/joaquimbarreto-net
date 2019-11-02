@@ -1,0 +1,43 @@
+.footer {
+  background-color: $dark-grey;
+  padding: 10rem 0;
+  font-size: $default-font-size;
+
+  &__link {
+    &:link,
+    &:visited {
+      color: $light-grey;
+      text-decoration: none;
+      text-transform: uppercase;
+      display: inline-block;
+    }
+
+    &:hover,
+    &:active {
+      color: $orange;
+    }
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__navigation {
+    border-top: 1px solid $light-grey;
+    padding-top: 2rem;
+    display: inline-block;
+  }
+
+  &__item {
+    display: inline-block;
+
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+  }
+
+  &__contact {
+    color: $light-grey;
+    text-decoration: none;
+  }
+}
