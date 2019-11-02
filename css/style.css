@@ -15,10 +15,10 @@ body {
   text-align: center; }
 
 .u-margin-bottom-big {
-  margin-bottom: 8rem; }
+  margin-bottom: 6rem; }
 
 .u-margin-bottom-medium {
-  margin-bottom: 5rem; }
+  margin-bottom: 3rem; }
 
 .u-margin-bottom-small {
   margin-bottom: 1.5rem; }
@@ -132,6 +132,11 @@ body {
   .section-blogs > * {
     transform: skewY(5.5deg); }
 
+.section-projects {
+  background-color: #eee;
+  padding: 25rem 0 50rem 0;
+  margin-top: -15vh; }
+
 .btn-text:link, .btn-text:visited {
   font-size: 1.6rem;
   color: #ec7a1c;
@@ -200,3 +205,34 @@ body {
   width: inherit;
   text-decoration: inherit;
   color: inherit; }
+
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 50rem; }
+  .card__side {
+    color: #fff;
+    height: 50rem;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+    .card__side--front {
+      background-color: #fff; }
+    .card__side--back {
+      transform: rotateY(180deg); }
+      .card__side--back-1 {
+        background-image: linear-gradient(to right bottom, #e6e4e0, #44443b); }
+      .card__side--back-2 {
+        background-image: linear-gradient(to right bottom, rgba(236, 122, 28, 0.5), #ec7a1c); }
+      .card__side--back-3 {
+        background-image: linear-gradient(to right bottom, #9b806e, #90462c); }
+  .card:hover .card__side--front {
+    transform: rotateY(-180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0); }
