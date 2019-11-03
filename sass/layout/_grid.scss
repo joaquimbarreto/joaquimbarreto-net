@@ -10,6 +10,10 @@
     }
   }
 
+  @include responsive(tablet-portrait) {
+    max-width: 50rem;
+  }
+
   @include clearfix;
 
   [class^="col-"] {

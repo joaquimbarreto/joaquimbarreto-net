@@ -13,6 +13,7 @@
 .btn-white {
   background-color: $default-white;
   color: $default-black;
+  margin-top: 0.5rem;
 
   &:hover {
     transform: translatey(-3px);

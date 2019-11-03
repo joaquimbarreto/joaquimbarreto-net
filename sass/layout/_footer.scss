@@ -3,6 +3,10 @@
   padding: 10rem 0;
   font-size: $default-font-size;
 
+  @include responsive(tablet-portrait) {
+    padding: 8rem 0;
+  }
+
   &__link {
     &:link,
     &:visited {
@@ -26,6 +30,11 @@
     border-top: 1px solid $light-grey;
     padding-top: 2rem;
     display: inline-block;
+
+    @include responsive(tablet-portrait) {
+      width: 100%;
+      margin-bottom: 0.5rem;
+    }
   }
 
   &__item {
