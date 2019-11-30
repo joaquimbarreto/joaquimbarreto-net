@@ -26,21 +26,21 @@
 
 @mixin responsive($breakpoint) {
   @if $breakpoint == phone {
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 37.5em) {
       //600px
       @content;
     }
   }
 
   @if $breakpoint == tablet-portrait {
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       //900px
       @content;
     }
   }
 
   @if $breakpoint == tablet-lanscape {
-    @media (max-width: 75em) {
+    @media only screen and (max-width: 75em) {
       //1200px
       @content;
     }
